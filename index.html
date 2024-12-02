@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-list</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7e4bb5f098.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+         <h1>Create your Todo-List  </h1>
+         <div class="inputs">
+            <input type="text" placeholder="What are your task for today?" id="input">
+            <button class="se" onclick="add()"><i class="fa-solid fa-plus"></i></button><br>
+            <button id="dealall" onclick="deleAll()">Delete All</button>
+         </div>
+         <ul id="ul"></ul>
+         <div class="records">
+            <div class="Edit" id="Edit">
+                <p>Edit</p>
+                <h3><span id="noofTime1">0</span> Times</h3>
+            </div>
+            <div class="Edit" id="complete">
+                <p>Completed</p>
+                <h3><span id="noofTime2">0</span> Times</h3>
+            </div>
+            <div class="Edit" id="deleted">
+                <p>Deleted</p>
+                <h3><span id="noofTime3">0</span> Times</h3>
+            </div>
+
+         </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
