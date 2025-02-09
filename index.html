@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-do-list</title>
+    <title>To_Do_App</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7e4bb5f098.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="main">
-         <h1>Create your Todo-List  </h1>
-         <div class="inputs">
-            <input type="text" placeholder="What are your task for today?" id="input">
-            <button class="se" onclick="add()"><i class="fa-solid fa-plus"></i></button><br>
-            <button id="dealall" onclick="deleAll()">Delete All</button>
-         </div>
+         <h1>Focus, Plan, Execute... </h1>
+         <div class="input-container">
+            <input type="text" id="input" placeholder=" " required onkeyup="enterKey(event)">
+            <label for="email">Typing...</label>
+        </div>
+        <button id="dealall" onclick="deleAll()">Delete All</button>
+         <!-- <div class="inputs">
+            <input type="text" placeholder="What are your task for today?" id="input" onkeyup="enterKey(event)">
+         </div> -->
          <ul id="ul"></ul>
          <div class="records">
             <div class="Edit" id="Edit">
@@ -32,6 +36,10 @@
 
          </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="app.js"></script>
 </body>
-</html>
+</html> 

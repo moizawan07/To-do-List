@@ -1,4 +1,12 @@
 var ul = document.getElementById('ul')
+ function enterKey ({key}){
+   console.log(key);
+   
+   if(key === 'Enter'){
+      add()
+   }
+ }
+
 function add(){
     var input = document.getElementById('input');
    if(input.value){
@@ -10,7 +18,7 @@ function add(){
   
     editbtn.setAttribute('class', 'fa-solid fa-pencil')
     editbtn.setAttribute('onclick', 'edit(this)')
-    console.log(editbtn);
+   //  console.log(editbtn);
 
     li.appendChild(editbtn)
 
